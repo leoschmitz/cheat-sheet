@@ -1,0 +1,2 @@
+# view logs
+journalctl -u service-name.service
