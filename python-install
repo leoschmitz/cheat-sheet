@@ -16,4 +16,4 @@ make -j 4
 sudo make altinstall
 
 # check
-Python3.8
+python3.8
