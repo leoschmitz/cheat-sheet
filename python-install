@@ -9,7 +9,7 @@ tar -xvf Python-3.8.5.tar.xz
 
 # configure & compile (4 threads)
 cd Python-3.8.5
-./configure
+./configure --enable-optimizations
 make -j 4
 
 # install
