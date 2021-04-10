@@ -1,7 +1,8 @@
 # docker installation (check the script please, before running it as root)
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
-sudo usermod -aG docker <your-user>
+sudo usermod -aG docker $USER
+sg group_name -c "bash"
 
 # docker compose instructions
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
