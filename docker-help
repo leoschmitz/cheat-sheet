@@ -1,3 +1,8 @@
+# docker installation (check the script please, before running it as root)
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker <your-user>
+
 # clean useless running images
 sudo docker stop `sudo docker ps -a -q`
 sudo docker rm `sudo docker ps -a -q`
