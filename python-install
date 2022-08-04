@@ -4,11 +4,11 @@ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-
 
 # get python version in tmp so its erased
 cd /tmp
-wget https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tar.xz
-tar -xvf Python-3.8.5.tar.xz
+wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
+tar -xvf Python-3.10.*.tgz
 
 # configure & compile (4 threads)
-cd Python-3.8.5
+cd Python-3.10.*/
 ./configure --enable-optimizations
 make -j 4
 
